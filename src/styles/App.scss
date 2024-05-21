@@ -1,0 +1,105 @@
+@import "./Header";
+@import "./Features";
+@import "./Body";
+@import "./Footer";
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Sora:wght@400;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.App {
+  max-width: 1200px;
+  margin: auto;
+  // border: 2px solid black;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Outfit", sans-serif;
+}
+
+@media screen and (max-width: 1100px) {
+  .apply img {
+    height: 250px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .apply {
+    text-align: center;
+    img {
+      height: 500px;
+      width: 600px;
+    }
+  }
+}
+@media screen and (max-width: 850px) {
+  .value-container {
+    flex-direction: column;
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .apply {
+    img {
+      height: 250px;
+      width: 300px;
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .browser {
+    > div > img {
+      width: 300px;
+    }
+  }
+
+  .body-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .body-container > main > div:first-child {
+    font-size: 40px !important;
+    font-weight: 100;
+  }
+
+  .magic-stick {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .browser {
+    > div > img {
+      width: 200px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .apply-container > div:nth-child(2) {
+    flex-wrap: wrap;
+  }
+}

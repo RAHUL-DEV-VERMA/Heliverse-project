@@ -1,0 +1,31 @@
+
+
+.header-container{
+  // border: 2px solid ;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+
+  >div{
+    // font-size: 20px;
+  }
+  >div:nth-child(2){
+    font-family: "Outfit", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    fill: #0D051F;
+    color: #0D051F;
+    background-color: aliceblue;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 16px 35px 16px 35px;
+
+    &:hover{
+      background-color: transparent;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+  }
+}
