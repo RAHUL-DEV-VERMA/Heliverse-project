@@ -1,5 +1,16 @@
 import { useEffect } from "react";
 import { FaArrowRight } from "react-icons/fa";
+import img1 from '../assets/motionarteffect-img1.png';
+import img2 from '../assets/motionarteffect-img2.png';
+import img3 from '../assets/motionarteffect-img3.png';
+import img4 from '../assets/motionarteffect-img4.png';
+import img5 from '../assets/motionarteffect-img5.png';
+import img6 from '../assets/motionarteffect-img6.png';
+import img7 from '../assets/motionarteffect-img7.png';
+import img8 from '../assets/motionarteffect-img8.png';
+import img9 from '../assets/motionarteffect-img9.png';
+import img10 from '../assets/motionarteffect-img10.png';
+import img11 from '../assets/motionarteffect-img11.png';
 
 const Body = () => {
   useEffect(() => {
@@ -59,17 +70,17 @@ const Body = () => {
 
       <section className="rating-container">
         <Star
-          logoimg={"src/assets/motionarteffect-img1.png"}
+          logoimg={img1}
           score={4.2}
           review={35}
         />
         <Star
-          logoimg={"src/assets/motionarteffect-img2.png"}
+          logoimg={img2}
           score={4.5}
           review={89}
         />
         <Star
-          logoimg={"src/assets/motionarteffect-img3.png"}
+          logoimg={img3}
           score={3.8}
           review={65}
         />
@@ -87,7 +98,7 @@ const Body = () => {
           <div>Purchase From Envato {<FaArrowRight />}</div>
         </div>
         <div>
-          <img src="src/assets/motionarteffect-img5.png" alt="" />
+          <img src={img5} alt="" />
         </div>
       </section>
       <section className="apply-container">
@@ -97,14 +108,14 @@ const Body = () => {
             <Apply
               heading="Apply On Section"
               content="Apply on section is a game-changer, offering an unparalleled way to manage applications directly from your website. "
-              img="src/assets/motionarteffect-img11.png"
+              img={img11}
             />
           </div>
           <div>
             <Apply
               heading="Apply On Page"
               content="Take your website to new heights with Motion Art for Elementor. Embrace the power of motion and animation. "
-              img="src/assets/motionarteffect-img10.png"
+              img={img10}
             />
           </div>
         </div>
@@ -116,7 +127,7 @@ const Body = () => {
           web browsers.
         </div>
         <div>
-          <img src="src/assets/motionarteffect-img8.png" alt="" />
+          <img src={img8} alt="" />
         </div>
       </section>
       <section className="plugin">
@@ -130,21 +141,21 @@ const Body = () => {
       <section className="value-container">
         <div>
           <Value
-            logo="src/assets/motionarteffect-img9.png"
+            logo={img9}
             heading="Light Weight"
             content="Motion Art for Elementor is designed to be lightweight."
           />
         </div>
         <div>
           <Value
-            logo="src/assets/motionarteffect-img6.png"
+            logo={img6}
             heading="Light Weight"
             content="Motion Art for Elementor is designed to be lightweight."
           />
         </div>
         <div>
           <Value
-            logo="src/assets/motionarteffect-img7.png"
+            logo={img7}
             heading="Light Weight"
             content="Motion Art for Elementor is designed to be lightweight."
           />
@@ -165,7 +176,7 @@ const Star = ({ logoimg, score, review }: starProps) => {
     <div className="star-container">
       <img src={logoimg} alt="" />
       <span>
-        <img src={"src/assets/motionarteffect-img4.png"} alt="" />
+        <img src={img4} alt="" />
         <div>
           {score}Score, {review} Reviews
         </div>
